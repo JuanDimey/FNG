@@ -17,13 +17,13 @@ with st.form("Formulario_modelo"):
     st.subheader("Ingrese los valores de las variables")
 
     # Variables categóricas agrupadas
-    producto = st.selectbox("Producto", ["MICROCREDITO EMPRESARIAL", "Otros", "UNIDOS POR COLOMBIA MICRO"])
-    oficina = st.selectbox("Oficina", ["Centro", "Costa Pacifica", "Eje Cafetero", "Oriente y Orinoquia"])
-    depto_cliente = st.selectbox("Departamento del Cliente", ["Centro", "Costa Pacifica", "Eje Cafetero", "Oriente y Orinoquia"])
+    producto = st.selectbox("Producto", ["MICROCREDITO EMPRESARIAL", "Otros", "UNIDOS POR COLOMBIA MICRO", "GARANTIA EMPRESARIAL MULTIPROPOSITO"])
+    oficina = st.selectbox("Oficina", ["Centro", "Costa Pacifica", "Eje Cafetero", "Oriente y Orinoquia", "Caribe"])
+    depto_cliente = st.selectbox("Departamento del Cliente", ["Centro", "Costa Pacifica", "Eje Cafetero", "Oriente y Orinoquia", "Caribe"])
     interlocutor = st.selectbox("Interlocutor", ["BANCO AGRARIO", "BANCO CAJA SOCIAL", "BANCO DE BOGOTA", 
                                                  "BANCO MUNDO MUJER S.A.", "BANCO W S.A.", "BANCOLOMBIA", 
-                                                 "MIBANCO S.A.", "Otros"])
-    calif_credito = st.selectbox("Calificación de Crédito", ["B", "C", "D", "E", "Otros"])
+                                                 "MIBANCO S.A.", "Otros", "BANCAMIA S.A."])
+    calif_credito = st.selectbox("Calificación de Crédito", ["B", "C", "D", "E", "Otros", "A"])
 
     # En la aplicación, los asesores ingresan valores no normalizados
     Cobertura = st.number_input("% de Cobertura", min_value=float(cobertura_min), max_value=float(cobertura_max), step=0.1)
