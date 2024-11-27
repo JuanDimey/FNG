@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 # Cargar el modelo
-with open("modelos/RandomForestClassifier.pkl", "rb") as file:
+with open("RandomForestClassifier.pkl", "rb") as file:
     model = pickle.load(file)
 
 st.title("Herramienta de Consulta Rápida Predicción Clientes - FNG")
